@@ -14,10 +14,10 @@ export default function Home() {
         <h1 className="display-1">Innovage</h1>
         <p>Sign in as:</p>
         <div className="d-flex flex-column align-items-center justify-content-center gap-3">
-          <Link href="/client">
+          <Link href="/client/signin">
             <Button className="w-100 px-5 py-2">Client</Button>
           </Link>
-          <Link href="/banker">
+          <Link href="/banker/signin">
             <Button className="w-100">Banker</Button>
           </Link>
         </div>
