@@ -1,133 +1,112 @@
 import Head from 'next/head'
 import styles from '../styles/clienthomepage.module.css'
-// import 'bootstrap';
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/js/bootstrap.js';
 
-const nvidiaNews = new URL("../public/nvidiaNews.JPG", import.meta.url)
-const coin_rock = new URL("../public/coin_rock.JPG", import.meta.url)
-const accnt = new URL ("../public/accountOverview.JPG", import.meta.url)
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+import { MdAccountCircle } from 'react-icons/Md'
+import {FaBalanceScale, FaFantasyFlightGames} from 'react-icons/Fa'
+import {HiUserGroup} from 'react-icons/Hi'
+import {GiNewspaper} from 'react-icons/Gi'
+import {BiCalculator} from 'react-icons/Bi'
+
 
 export default function Home() {
   return (
-      <Head>
-        <title>Welcome to OneCiti</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"></link>
-       
+    <Head>
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">OneCiti</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">News</Nav.Link>
+            <NavDropdown title="My Accounts" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Bank Accounts</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Transaction History
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">View Portfolio</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+              Make a Transfer
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="http://t.me/onecity_client_bot" target = "_blank">ChatBot</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <div className =  {styles.oneCiti} class ="navbar-brand ml-20" href="#">OneCiti </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class = "nav-item active">
-              <a class = "nav-link text-dark" href = "#">  <h4>News</h4> </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                 <h5>Accounts</h5>
-              </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-             <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-               <a class="dropdown-item" href="#"> Something else here </a>
-            </div>
-              </li>
+    <span className = {styles.header}>
+            <h1>OneCiti</h1>
+        </span>
+        <span>
+        <h1 className = {styles.header}> Welcome Back, User</h1>
+        </span>
 
-              <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                 Services
-              </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-             <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-               <a class="dropdown-item" href="#"> Something else here </a>
-            </div>
-              </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0 justify-content-end" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-          <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
-          <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-
-<div class = "row">
-      <div class = "col-2 offset-1">
         <div class = "row">
-          <div className = {styles.welcomeBox}>
-              <h5 className ={styles.welcomeName}>Welcome Back Lucas</h5>
-              <p>
-                last login: 9th August 2022
-              </p>
-          </div>
-        </div>
+                    <div class = "col-3 offset-2">
+                        <a className = {styles.categoryLogo} href = "#">
+                        <MdAccountCircle size = {120} />
+                        </a>
+                        <a className = {styles.categoriesHeaders} href = "#">
+                          My Accounts
+                        </a>
 
-      <div class = "row">
-          <button type="button" class="btn btn-primary btn-lg mt-4 btn-block"> Assets </button>
-          </div>
-              <div class = "row">
-                  <button type="button" class="btn btn-primary btn-lg mt-4">Trading</button>
-              </div>
-              <div class = "row">
-                  <button type="button" class="btn btn-primary btn-lg mt-4">Investments</button>
-              </div>
-              <div class = "row">
-                  <button type="button" class="btn btn-primary btn-lg mt-4"> Financial Planning</button>
-              </div>
-          </div>
-
-    <div class = "col-5">
-        <div class = "row">
-            <div className = {styles.bank_status_box}>
-                <div className = {styles.accountOverview}>
-                  Account Overview
-                </div>
-                  <div class = "row">
-                    <img src = {accnt}/>
-                  </div>
+                      </div>
+                      
+                      <div class = "col-3">
+                           <a className = {styles.categoryLogo} href = "#">
+                               <FaBalanceScale size = {120} />
+                            </a>
+                            <a className = {styles.categoriesHeaders} href = "#">
+                          Stock Exchange
+                        </a>
+                      </div>
+                      
+                    <div class = "col-3">
+                    <a className = {styles.categoryLogo} href = "#">
+                               <HiUserGroup size = {120} />
+                            </a>
+                            <a className = {styles.categoriesHeaders} href = "#">
+                          Financial Services
+                        </a>
+                    </div>
             </div>
-        </div>
-        <div class = "row">
-            <div className = {styles.portfolio_box}>
-              <div className = {styles.accountOverview}>
-                Portfolio Performance
-              </div>
+         <div class = "row">
+        
+                      <div class = "col-3 offset-2">
+                      <a className = {styles.btmcategoryLogo} href = "#">
+                               <GiNewspaper size = {120} />
+                            </a>
+                            <a className = {styles.btmcategoriesHeaders} href = "#">
+                          Financial News
+                        </a>
+                      </div>
+                      
+                      <div class = "col-3">
+                      <a className = {styles.btmcategoryLogo} href = "#">
+                               <BiCalculator size = {120} />
+                            </a>
+                            <a className = {styles.btmcategoriesHeaders} href = "#">
+                          Financial Tools
+                        </a>
+                        
+                      </div>
+                      <div class = "col-3">
+                      <a className = {styles.btmcategoryLogo} href = "#">
+                               <FaFantasyFlightGames size = {120} />
+                            </a>
+                            <a className = {styles.btmcategoriesHeaders} href = "#">
+                          Financial Game
+                        </a>
+                      </div>
             </div>
-        </div>
-
-    </div>
-
-    <div class = "col-3"> 
-    <div className = {styles.news}>
-        <h1 className = {styles.news_title}> News Feed </h1>
-          <div class = "row">
-              <div>
-                  <img className = {styles.nvidiaNewsImage} src = {nvidiaNews}/>
-              </div>
-              <div>
-                <h4 className = {styles.nvidiaNewsLine}> Nvidia warns of lower second-quarter revenue on gaming weakness.. </h4>
-              </div>
-          </div>
-
-          <div class = "row">
-              <div>
-                  <img className = {styles.coinRock} src = {coin_rock}/>
-              </div>
-              <div>
-                <h4 className = {styles.nvidiaNewsLine}> BlackRock Teams Up With Coinbase in Cryto Market.. </h4>
-              </div>
-          </div>
-
-          </div>
-    </div>
-</div>
-         </Head>
-  )
+    </Head>
+  );
 }

@@ -17,11 +17,8 @@ export default function Home() {
     return (
         <Head>
           <title>Welcome to OneCiti</title>
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"></link>
-         <div class = "row">
-             
-            <div className = {styles.headerNav}>
-            <Navbar bg="light" expand="lg">
+
+    <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -44,20 +41,14 @@ export default function Home() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-               
-            </div>
-         </div>
+            
 
-         <div class = "row">
-            <div className = {styles.oneCitigrid}>
-                <h2 className = {styles.oneCitiHeader}> OneCiti  </h2>
-            </div>
-            <div class = "row">
-                <div className = {styles.welcomeGrid}>
-                        <h2 className = {styles.welcomeHeader}> Welcome Back User</h2>
-                </div>
-            </div>
-         </div>
+        <span className = {styles.header}>
+            <h1>OneCiti</h1>
+        </span>
+        <span>
+        <h1 className = {styles.header}> Welcome Back, User</h1>
+        </span>
 
          <div class = "row">
             <div class = "col-3 offset-2">
@@ -179,5 +170,5 @@ export default function Home() {
 
         
            </Head>
-    )
+    );
   }
