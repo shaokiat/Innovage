@@ -1,0 +1,161 @@
+.body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+  }
+  
+  .bg-steel {
+    background-color: #5f788a;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+
+  
+  .article-title {
+    color: #444444;
+  }
+  
+  a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+  }
+  
+  .article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+
+
+
+ /* ----------------------------------------------------------- */
+  .oneCiti {
+    background: #fffffffd;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family : Arial, Helvetica, sans-serif;
+    font-size : large;
+    font-weight : 600;
+    color : rgb(68, 68, 188);
+    margin-left:5px;
+  }
+
+.news{
+    background : rgb(255, 245, 232);
+    height : 50em;
+    width : 100%;
+    margin-left:10px;
+}
+
+.news_title{
+    display : table;
+    width : 100%;
+    height:1.25em;
+    font-family : 'Times New Roman', Times, serif;
+    color: white;
+    background: red;
+    text-align: center;
+}
+
+.welcomeBox {
+    background: #0d43f6;
+    padding: 30px 5px;
+    border: 2px solid #c4c4c4;
+    border-radius: 10px;
+    margin-top : 30px;
+    width : 25em;
+    color : white;
+    text-align: center;
+}
+
+.welcomeName {
+    text-align: center;
+}
+
+.nvidiaNewsImage {
+    width: 26em;
+    position : relative;
+    top: -10px;
+    }
+
+.nvidiaNewsLine {
+    margin-left:5px;
+    margin-top:3px;
+    text-align : center;
+    font-family: Times;
+    font-weight:600;
+    border-style: solid;
+
+}
+
+.coinRock {
+    width:26em;
+}
+
+.bank_status_box {
+    border: 2px solid #000000;
+    border-radius:5px;
+    margin-left:10px;
+    margin-top:3px;
+    height:20em;
+    /* width : 33.5em; */
+}
+
+.accountOverview {
+    text-align : center;
+    font-weight: 600;
+    font-size:1.5em;
+}
+
+.portfolio_box {
+    border: 2px solid #000000;
+    border-radius:5px;
+    margin-left:10px;
+    margin-top:17px;
+    height:20em;
+}
