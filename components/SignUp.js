@@ -1,23 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Router from 'next/router'
 
-const SignUp = ({}) => {
+const SignUp = ({ user }) => {
+  const [currentUser, setCurrentUser] = useState({
+    username: '',
+    password: '',
+  })
+
+  const userSignUp = async () => {
+    console.log(currentUser.username)
+    const response = await fetch('/api/createUser', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        username: currentUser.username,
+        user: user,
+      }),
+    })
+    const { success, message } = await response.json()
+    if (!success) {
+      setShowError(true)
+    }
+    return success
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const userExists = await userSignUp()
+    if (userExists) {
+      Router.push(`/${user}`)
+    }
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h3>Sign Up</h3>
       <div className="mb-3">
-        <label>First name</label>
-        <input type="text" className="form-control" placeholder="First name" />
-      </div>
-      <div className="mb-3">
-        <label>Last name</label>
-        <input type="text" className="form-control" placeholder="Last name" />
-      </div>
-      <div className="mb-3">
-        <label>Email address</label>
+        <label>Username</label>
         <input
-          type="email"
+          type="text"
           className="form-control"
-          placeholder="Enter email"
+          placeholder="username"
+          onChange={(e) =>
+            setCurrentUser({ ...currentUser, username: e.target.value })
+          }
         />
       </div>
       <div className="mb-3">
@@ -26,6 +54,9 @@ const SignUp = ({}) => {
           type="password"
           className="form-control"
           placeholder="Enter password"
+          onChange={(e) =>
+            setCurrentUser({ ...currentUser, password: e.target.value })
+          }
         />
       </div>
       <div className="d-grid">
