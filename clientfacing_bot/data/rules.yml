@@ -2,6 +2,36 @@ version: "2.0"
 
 rules:
 
+- rule: initiate bot
+  steps:
+  - intent: start
+  - action: action_greet
+
+- rule : check account_balance
+  steps:
+  - intent: check_account
+  - action: action_check_account
+
+- rule: check portfolio
+  steps:
+  - intent: check_portfolio
+  - action: action_portfolio_country
+
+- rule: US Market
+  steps:
+  - intent: US_market
+  - action: action_US_portfolio
+
+- rule: get_promotion
+  steps:
+  - intent: get_promo
+  - action: action_promo
+
+- rule: get_agent
+  steps:
+  - intent: get_agent
+  - action: action_get_agent
+  
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
