@@ -29,7 +29,7 @@ class TelegramOutput(TeleBot, OutputChannel):
     # skipcq: PYL-W0236
     @classmethod
     def name(cls) -> Text:
-        return "pixie"
+        return "OneCiti"
 
     def __init__(self, access_token: Optional[Text]) -> None:
         super().__init__(access_token)
@@ -71,7 +71,7 @@ class TelegramOutput(TeleBot, OutputChannel):
             reply_markup = InlineKeyboardMarkup()
             [
                 reply_markup.row(
-                    InlineKeyboardButton(s["title"], callback_data=s["payload"],url=s["url"])
+                    InlineKeyboardButton(s["title"], callback_data=s["payload"]) # ,url=s["url"]
                 )
                 for s in buttons
             ]

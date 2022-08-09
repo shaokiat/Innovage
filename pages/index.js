@@ -2,6 +2,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Button } from 'react-bootstrap'
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import your icons
+
+import { faCode, faHighlighter } from '@fortawesome/free-solid-svg-icons';
+
 export default function Home() {
   return (
     <div>
