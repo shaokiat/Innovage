@@ -1,6 +1,7 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 
-const Login = () => {
+const Login = ({}) => {
   return (
     <form>
       <h3>Sign In</h3>
@@ -40,6 +41,14 @@ const Login = () => {
       <p className="forgot-password text-right">
         Forgot <a href="#">password?</a>
       </p>
+      <div className="d-flex flex-row align-items-center">
+        <div>New user?</div>
+        <div className="m-2">
+          <a href={`signup`}>
+            <Button variant="success">Sign Up</Button>
+          </a>
+        </div>
+      </div>
     </form>
   )
 }
