@@ -6,6 +6,23 @@ intents:
   - affirm
   - deny
   - bot_challenge
+  - check_account
+  - check_portfolio
+  - get_promo
+  - get_agent
+  - start
+  - US_market
+  - SG_market
+  - HK_market
+
+actions:
+  - action_greet
+  - action_check_account
+  - action_menu_template
+  - action_portfolio_country
+  - action_US_portfolio
+  - action_promo
+  - action_get_agent
 
 responses:
   utter_greet:
