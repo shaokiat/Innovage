@@ -13,8 +13,8 @@ import { BiCalculator } from 'react-icons/bi'
 
 export default function Home() {
   return (
-    <>
-      <Head>
+    <div>
+      {/* <Head>
         <Navbar bg="light" expand="lg">
           <Container>
             <Navbar.Brand href="#home">OneCiti</Navbar.Brand>
@@ -31,7 +31,7 @@ export default function Home() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </Head>
+      </Head> */}
 
       <span className={styles.header}>
         <h1>OneCiti</h1>
@@ -95,6 +95,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   )
 }
