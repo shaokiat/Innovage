@@ -2,6 +2,16 @@ version: "2.0"
 
 rules:
 
+- rule: start
+  steps:
+  - intent: start
+  - action: action_start
+
+- rule: check outstanding client request
+  steps:
+  - intent: check_outstanding
+  - action: action_outstanding_clients
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
