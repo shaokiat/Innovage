@@ -1,16 +1,55 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap'
+import Router from 'next/router'
 
-const Login = ({}) => {
+const Login = ({ user }) => {
+  const [currentUser, setCurrentUser] = useState({
+    username: '',
+    password: '',
+  })
+  const [showError, setShowError] = useState(false)
+
+  const checkUser = async () => {
+    console.log(currentUser.username)
+    const response = await fetch('/api/getUser', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        username: currentUser.username,
+        user: user,
+      }),
+    })
+    const { success, message } = await response.json()
+    console.log(message)
+    if (!success) {
+      setShowError(true)
+    }
+    console.log(success)
+    return success
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const userExists = await checkUser()
+    if (userExists) {
+      Router.push(`/${user}`)
+    }
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h3>Sign In</h3>
       <div className="mb-3">
-        <label>Email address</label>
+        <label>Username</label>
         <input
-          type="email"
+          type="username"
           className="form-control"
           placeholder="Enter email"
+          onChange={(e) =>
+            setCurrentUser({ ...currentUser, username: e.target.value })
+          }
         />
       </div>
       <div className="mb-3">
@@ -19,6 +58,9 @@ const Login = ({}) => {
           type="password"
           className="form-control"
           placeholder="Enter password"
+          onChange={(e) =>
+            setCurrentUser({ ...currentUser, password: e.target.value })
+          }
         />
       </div>
       <div className="mb-3">
@@ -35,7 +77,7 @@ const Login = ({}) => {
       </div>
       <div className="d-grid">
         <button type="submit" className="btn btn-primary">
-          Submit
+          Sign In
         </button>
       </div>
       <p className="forgot-password text-right">
