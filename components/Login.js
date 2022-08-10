@@ -10,7 +10,6 @@ const Login = ({ user }) => {
   const [showError, setShowError] = useState(false)
 
   const checkUser = async () => {
-    console.log(currentUser.username)
     const response = await fetch('/api/getUser', {
       method: 'POST',
       headers: {
@@ -22,11 +21,9 @@ const Login = ({ user }) => {
       }),
     })
     const { success, message } = await response.json()
-    console.log(message)
     if (!success) {
       setShowError(true)
     }
-    console.log(success)
     return success
   }
 
@@ -35,7 +32,7 @@ const Login = ({ user }) => {
     const userExists = await checkUser()
     if (userExists) {
       sessionStorage.setItem('username', JSON.stringify(currentUser.username))
-      Router.push(`/${user}`)
+      Router.push(`/${user}/home`)
     }
   }
 
@@ -48,7 +45,7 @@ const Login = ({ user }) => {
           <input
             type="username"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Enter username"
             onChange={(e) =>
               setCurrentUser({ ...currentUser, username: e.target.value })
             }

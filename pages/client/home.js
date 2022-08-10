@@ -7,17 +7,26 @@ import { HiUserGroup, HiOutlineAcademicCap } from 'react-icons/hi'
 import { BiCalculator } from 'react-icons/bi'
 import Link from 'next/link'
 
-export default function home() {
+export default function Home() {
+  const getUserOrDefault = () => {
+    if (typeof window !== 'undefined') {
+      const username = sessionStorage.getItem('username')
+      if (!username) {
+        return 'User'
+      }
+      return JSON.parse(username)
+    }
+  }
   return (
     <div>
-        <Head>
-          <title>Home</title>
-        </Head>
+      <Head>
+        <title>Home</title>
+      </Head>
       <span className={styles.header}>
         <h1>OneCiti</h1>
       </span>
       <span>
-        <h1 className={styles.header}> Welcome Back, User</h1>
+        <h1 className={styles.header}> Welcome Back, {getUserOrDefault()}</h1>
       </span>
 
       <div className="row justify-content-center">
