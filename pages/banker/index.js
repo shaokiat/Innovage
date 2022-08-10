@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <Head>
       <title>Welcome to OneCiti</title>
-
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="#home">OneCiti</Navbar.Brand>
