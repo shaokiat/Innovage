@@ -11,7 +11,7 @@ export default function financial_advisory() {
   return (
     <div>
       <div className="container">
-        <Link href="/client">
+        <Link href="/financial_services">
           <a className={styles.insuranceBack}>
             <MdKeyboardBackspace size={40} />
           </a>

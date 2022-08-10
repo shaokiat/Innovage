@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/financialservices.module.css'
 
 
-import {MdKeyboardBackspace} from 'react-icons/Md'
+import {MdKeyboardBackspace} from 'react-icons/md'
 
 export default function financial_services() {
     return (
