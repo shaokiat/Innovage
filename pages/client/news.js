@@ -16,12 +16,16 @@ const imgStyle = {
   backgroundRepeat: 'no-repeat',
 }
 
+
 const Home = () => {
   return (
     <>
-      <head>
-        <title>News</title>
-      </head>
+      <Head>
+        <title>My page title</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
+      
+
       
       <div className={styles["container"]}>
         {
@@ -42,4 +46,5 @@ const Home = () => {
     </>
   )
 }
+
 export default Home
