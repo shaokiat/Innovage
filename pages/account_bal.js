@@ -13,9 +13,12 @@ const card3 = new URL('../public/card3.jpg', import.meta.url)
 
 const expenses1 = new URL('../public/mtd_expenses.jpg', import.meta.url)
 
-export default function financial_advisory() {
+export default function account_bal() {
   return (
     <div>
+      <Head>
+        <title>Account Balance</title>
+      </Head>
       <div className={styles.Background}>
         <div className="row offset-1">
           <div className="col">

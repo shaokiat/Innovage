@@ -1,4 +1,5 @@
 import styles from '../../styles/clienthomepage.module.css'
+import Head from 'next/head'
 
 import { MdAccountCircle } from 'react-icons/md'
 import { FaBalanceScale, FaFantasyFlightGames } from 'react-icons/fa'
@@ -6,9 +7,12 @@ import { HiUserGroup, HiOutlineAcademicCap } from 'react-icons/hi'
 import { BiCalculator } from 'react-icons/bi'
 import Link from 'next/link'
 
-export default function Home() {
+export default function clientHome() {
   return (
     <div>
+        <Head>
+          <title>Home</title>
+        </Head>
       <span className={styles.header}>
         <h1>OneCiti</h1>
       </span>
@@ -58,12 +62,12 @@ export default function Home() {
       </div>
       <div className="row justify-content-center">
         <div className="col-3">
-          <Link href="/academy">
+          <Link href="../academy">
             <a className={styles.btmcategoryLogo}>
               <HiOutlineAcademicCap size={120} />
             </a>
           </Link>
-          <Link href="/academy">
+          <Link href="../academy">
             <a className={styles.btmcategoriesHeaders}>Academy</a>
           </Link>
         </div>

@@ -1,15 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/financialservices.module.css'
 
-<<<<<<< HEAD
-
 import {MdKeyboardBackspace} from 'react-icons/md'
-=======
->>>>>>> 1f87f6eafaa5ce3c18be6e0cd9cefbcf0ab46596
 
-export default function financial_services() {
+export default function academy() {
   return (
-    <Head>
+    <div>
+        <Head>
+          <title>Citi Academy</title>
+        </Head>
+
       <title>Financial Services</title>
       <div className="container">
         <a href="/client/clientHome" className={styles.BackButton}>
@@ -26,6 +26,6 @@ export default function financial_services() {
           </a>
         </div>
       </div>
-    </Head>
+      </div>
   )
 }

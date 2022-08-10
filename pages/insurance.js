@@ -1,4 +1,5 @@
 import styles from '../styles/financialservices.module.css'
+import Head from 'next/head'
 
 import { MdKeyboardBackspace, MdHealthAndSafety } from 'react-icons/md'
 import { AiFillCar, AiOutlineHome } from 'react-icons/ai'
@@ -7,9 +8,12 @@ import { RiSeedlingLine } from 'react-icons/ri'
 import { TbWheelchair } from 'react-icons/tb'
 import Link from 'next/link'
 
-export default function financial_advisory() {
+export default function insurance() {
   return (
     <div>
+      <Head>
+       <title>Insurance</title> 
+      </Head>
       <div className="container">
         <Link href="/financial_services">
           <a className={styles.insuranceBack}>

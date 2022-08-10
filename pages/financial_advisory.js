@@ -1,5 +1,6 @@
 import styles from '../styles/financialservices.module.css'
 import Link from 'next/link'
+import Head from 'next/head'
 
 import { MdKeyboardBackspace, MdOutlineBusinessCenter } from 'react-icons/md'
 import { FaPenSquare } from 'react-icons/fa'
@@ -40,6 +41,9 @@ const data = [
 export default function financial_advisory() {
   return (
     <div>
+        <Head>
+          <title>Financial Advisory</title>
+        </Head>
       <div className="container">
         <Link href="/financial_services">
           <a className={styles.adviseBack}>
