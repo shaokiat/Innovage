@@ -2,12 +2,13 @@ import Head from 'next/head'
 import styles from '../styles/account_bal.module.css'
 
 import { BsCalendar3 } from 'react-icons/bs'
-import { FaArrowRight, FaTshirt } from 'react-icons/Fa'
-import { MdOutlineFastfood } from 'react-icons/Md'
-import { TbDental } from 'react-icons/Tb'
-import { AiOutlineArrowDown } from 'react-icons/Ai'
+import { FaArrowRight, FaTshirt } from 'react-icons/fa'
+import { MdOutlineFastfood } from 'react-icons/md'
+import { TbDental } from 'react-icons/tb'
+import { AiOutlineArrowDown } from 'react-icons/ai'
+import Link from 'next/link'
 
-const card1 = new URL('../public/card1.JPG', import.meta.url)
+const card1 = new URL('../public/card1.jpg', import.meta.url)
 const card2 = new URL('../public/card2.jpg', import.meta.url)
 const card3 = new URL('../public/card3.jpg', import.meta.url)
 
@@ -22,33 +23,41 @@ export default function account_bal() {
       <div className={styles.Background}>
         <div className="row offset-1">
           <div className="col">
-            <a href="/client/clientHome" className={styles.BankHeader}>
-              OneCiti
-            </a>
+            <Link href="/client/clientHome">
+              <a className={styles.BankHeader}>OneCiti</a>
+            </Link>
           </div>
           <div className="col-2">
-            <a href="" className={styles.navbutton}>
-              My Account
-              <div className={styles.Line}> </div>
-            </a>
+            <Link href="#">
+              <a className={styles.navbutton}>
+                My Account
+                <div className={styles.Line}> </div>
+              </a>
+            </Link>
           </div>
           <div className="col-2">
-            <a href="" className={styles.navbutton}>
-              Transactions
-              <div className={styles.Line}> </div>
-            </a>
+            <Link href="#">
+              <a href="" className={styles.navbutton}>
+                Transactions
+                <div className={styles.Line}> </div>
+              </a>
+            </Link>
           </div>
           <div className="col-2">
-            <a href="" className={styles.navbutton}>
-              Cards
-              <div className={styles.Line}> </div>
-            </a>
+            <Link href="#">
+              <a href="" className={styles.navbutton}>
+                Cards
+                <div className={styles.Line}> </div>
+              </a>
+            </Link>
           </div>
           <div className="col">
-            <a href="" className={styles.navbutton}>
-              Offers
-              <div className={styles.Line}> </div>
-            </a>
+            <Link href="#">
+              <a href="" className={styles.navbutton}>
+                Offers
+                <div className={styles.Line}> </div>
+              </a>
+            </Link>
           </div>
         </div>
 
@@ -122,7 +131,6 @@ export default function account_bal() {
           </div>
           <div className="col-1">
             <a href="#">
-              {' '}
               <FaArrowRight className={styles.rightArrow} size={40} />
             </a>
           </div>
@@ -230,9 +238,11 @@ export default function account_bal() {
                 </div>
               </div>
               <div className="row">
-                <a className={styles.SeeMore}>
-                  See More <AiOutlineArrowDown size={30} />
-                </a>
+                <Link href="#">
+                  <a className={styles.SeeMore}>
+                    See More <AiOutlineArrowDown size={30} />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
