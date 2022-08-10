@@ -8,7 +8,7 @@ import { TbDental } from 'react-icons/tb'
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import Link from 'next/link'
 
-const card1 = new URL('../public/card1.JPG', import.meta.url)
+const card1 = new URL('../public/card1.jpg', import.meta.url)
 const card2 = new URL('../public/card2.jpg', import.meta.url)
 const card3 = new URL('../public/card3.jpg', import.meta.url)
 
