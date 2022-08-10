@@ -39,8 +39,8 @@ export default function Home() {
         <h1 className={styles.header}> Welcome Back, User</h1>
       </span>
 
-      <div className="row">
-        <div className="col-3 offset-2">
+      <div className="row justify-content-center">
+        <div className="col-3">
           <a className={styles.categoryLogo} href="#">
             <MdAccountCircle size={120} />
           </a>
@@ -67,8 +67,8 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="row">
-        <div className="col-3 offset-2">
+      <div className="row justify-content-center">
+        <div className="col-3">
           <a className={styles.btmcategoryLogo} href="#">
             <GiNewspaper size={120} />
           </a>

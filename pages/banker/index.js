@@ -39,8 +39,8 @@ export default function Home() {
         <h1 className={styles.header}> Welcome Back, User</h1>
       </span>
 
-      <div className="row">
-        <div className="col-3 offset-2">
+      <div className="row justify-content-center">
+        <div className="col-3">
           <a href="" className={styles.lowserviceBox}>
             <div className={styles.taskIcon}>
               <BsReverseLayoutTextSidebarReverse size={70} />
@@ -92,8 +92,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="row">
-        <div className="col-3 offset-2">
+      <div className="row justify-content-center">
+        <div className="col-3">
           <a href="" className={styles.topserviceBox}>
             <div className={styles.taskIcon}>
               <HiUserGroup size={70} />
