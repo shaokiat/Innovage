@@ -2,10 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/account_bal.module.css'
 
 import { BsCalendar3 } from 'react-icons/bs'
-import { FaArrowRight, FaTshirt } from 'react-icons/Fa'
-import { MdOutlineFastfood } from 'react-icons/Md'
-import { TbDental } from 'react-icons/Tb'
-import { AiOutlineArrowDown } from 'react-icons/Ai'
+import { FaArrowRight, FaTshirt } from 'react-icons/fa'
+import { MdOutlineFastfood } from 'react-icons/md'
+import { TbDental } from 'react-icons/tb'
+import { AiOutlineArrowDown } from 'react-icons/ai'
 import Link from 'next/link'
 
 const card1 = new URL('../public/card1.JPG', import.meta.url)
