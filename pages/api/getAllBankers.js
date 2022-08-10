@@ -2,7 +2,7 @@ import { connectToDatabase } from '../../utils/mongodb'
 
 export default async function handler(req, res) {
   switch (req.method) {
-    case 'POST': {
+    case 'GET': {
       try {
         const { username, user } = req.body
         console.log(username, user)
