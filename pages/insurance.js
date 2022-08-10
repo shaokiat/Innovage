@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from '../styles/financialservices.module.css'
 
 import { MdKeyboardBackspace, MdHealthAndSafety } from 'react-icons/md'
@@ -10,7 +9,7 @@ import Link from 'next/link'
 
 export default function financial_advisory() {
   return (
-    <Head>
+    <div>
       <div className="container">
         <Link href="/client">
           <a className={styles.insuranceBack}>
@@ -73,6 +72,6 @@ export default function financial_advisory() {
           </Link>
         </div>
       </div>
-    </Head>
+    </div>
   )
 }

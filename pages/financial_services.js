@@ -6,8 +6,11 @@ import Link from 'next/link'
 
 export default function financial_services() {
   return (
-    <Head>
-      <title>Financial Services</title>
+    <div>
+      <Head>
+        <title>Financial Services</title>
+      </Head>
+
       <div className="container">
         <Link href="/client">
           <a className={styles.BackButton}>
@@ -29,6 +32,6 @@ export default function financial_services() {
           </Link>
         </div>
       </div>
-    </Head>
+    </div>
   )
 }
