@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 
-import { MdAccountCircle } from 'react-icons/Md'
+import { MdAccountCircle } from 'react-icons/md'
 import { FaBalanceScale, FaFantasyFlightGames } from 'react-icons/fa'
 import { HiUserGroup } from 'react-icons/hi'
 import { GiNewspaper } from 'react-icons/gi'

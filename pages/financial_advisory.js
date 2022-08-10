@@ -9,31 +9,31 @@ const data = [
     name: 'Jonathan',
     specialization: 'Specialized in SME businesses',
     department: 'Financing (Equity / Debt)',
-    image: new URL('../public/Agent1.JPG', import.meta.url),
+    image: new URL('../public/Agent1.jpg', import.meta.url),
   },
   {
     name: 'Michelle',
     specialization: 'Specialized in Personal Finance',
     department: 'Investment (Stocks / Bonds)',
-    image: new URL('../public/Agent2.JPG', import.meta.url),
+    image: new URL('../public/Agent2.jpg', import.meta.url),
   },
   {
     name: 'Su-Ann',
     specialization: 'Specialized in Retirement Planning',
     department: 'Budgeting / Investment',
-    image: new URL('../public/Agent3.JPG', import.meta.url),
+    image: new URL('../public/Agent3.jpg', import.meta.url),
   },
   {
     name: 'Su-Ann',
     specialization: 'Specialized in Retirement Planning',
     department: 'Budgeting / Investment',
-    image: new URL('../public/Agent3.JPG', import.meta.url),
+    image: new URL('../public/Agent3.jpg', import.meta.url),
   },
   {
     name: 'Su-Ann',
     specialization: 'Specialized in Retirement Planning',
     department: 'Budgeting / Investment',
-    image: new URL('../public/Agent3.JPG', import.meta.url),
+    image: new URL('../public/Agent3.jpg', import.meta.url),
   },
 ]
 
