@@ -1,6 +1,5 @@
 /* Financial Services CSS */
 .Service1 {
-  border: 3px solid white;
   margin-top: 2em;
   height: 200px;
   border-radius: 6px;
@@ -9,11 +8,10 @@
   color: white;
   padding: 70px;
   background-image: url('https://miro.medium.com/max/1200/1*-UpdtERkDsx-8QPmZOj-wQ.png');
-  box-shadow: 0px 10px 20px 1px black;
+  box-shadow: 1px 5px 15px 1px black;
 }
 
 .Service2 {
-  border: 3px solid white;
   margin-top: 5em;
   height: 200px;
   border-radius: 6px;
@@ -25,7 +23,8 @@
   background-image: url('https://www.passionateinmarketing.com/wp-content/uploads/2021/09/Insurance-Website_1775x462px_Option-2-e1606901611756.jpg');
   background-repeat: no-repeat;
   background-size: auto;
-  box-shadow: 0px 10px 20px 1px black;
+  box-shadow: 1px 5px 15px 1px black;
+  background-position: 0  -150px;
 }
 
 .BackButton {
