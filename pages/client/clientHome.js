@@ -8,30 +8,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { MdAccountCircle } from 'react-icons/Md'
 import {FaBalanceScale, FaFantasyFlightGames} from 'react-icons/Fa'
-import {HiUserGroup} from 'react-icons/Hi'
-import {GiNewspaper} from 'react-icons/Gi'
+import {HiUserGroup,HiOutlineAcademicCap} from 'react-icons/Hi'
 import {BiCalculator} from 'react-icons/Bi'
 
 export default function Home() {
   return (
-    <Head>
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">OneCiti</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">News</Nav.Link>
-            <Nav.Link href="http://t.me/onecity_client_bot" target = "_blank">ChatBot</Nav.Link>
-            <Nav.Link href="/">Log Out</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-
-
-    <span className = {styles.header}>
+    <div>
+<span className = {styles.header}>
             <h1>OneCiti</h1>
         </span>
         <span>
@@ -40,20 +23,20 @@ export default function Home() {
 
         <div class = "row">
                     <div class = "col-3 offset-2">
-                        <a className = {styles.categoryLogo} href = "#">
+                        <a className = {styles.categoryLogo} href = "../account_bal">
                         <MdAccountCircle size = {120} />
                         </a>
-                        <a className = {styles.categoriesHeaders} href = "#">
+                        <a className = {styles.categoriesHeaders} href = "../account_bal">
                           My Accounts
                         </a>
 
                       </div>
                       
                       <div class = "col-3">
-                           <a className = {styles.categoryLogo} href = "#">
+                           <a className = {styles.categoryLogo} href = "https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action?ts=1660136063283" target="_blank">
                                <FaBalanceScale size = {120} />
                             </a>
-                            <a className = {styles.categoriesHeaders} href = "#">
+                            <a className = {styles.categoriesHeaders} href = "https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action?ts=1660136063283" target="_blank">
                           Stock Exchange
                         </a>
                       </div>
@@ -70,11 +53,11 @@ export default function Home() {
          <div class = "row">
         
                       <div class = "col-3 offset-2">
-                      <a className = {styles.btmcategoryLogo} href = "#">
-                               <GiNewspaper size = {120} />
+                      <a className = {styles.btmcategoryLogo} href = "/academy">
+                               <HiOutlineAcademicCap size = {120} />
                             </a>
-                            <a className = {styles.btmcategoriesHeaders} href = "#">
-                          Financial News
+                            <a className = {styles.btmcategoriesHeaders} href = "/academy">
+                          Academy
                         </a>
                       </div>
                       
@@ -96,6 +79,6 @@ export default function Home() {
                         </a>
                       </div>
             </div>
-    </Head>
+            </div>
   );
 }
