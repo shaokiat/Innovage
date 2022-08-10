@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/clienthomepage.module.css'
+import styles from '../../styles/clienthomepage.module.css'
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -12,7 +12,6 @@ import {HiUserGroup} from 'react-icons/Hi'
 import {GiNewspaper} from 'react-icons/Gi'
 import {BiCalculator} from 'react-icons/Bi'
 
-
 export default function Home() {
   return (
     <Head>
@@ -24,18 +23,8 @@ export default function Home() {
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">News</Nav.Link>
-            <NavDropdown title="My Accounts" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Bank Accounts</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Transaction History
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">View Portfolio</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-              Make a Transfer
-              </NavDropdown.Item>
-            </NavDropdown>
             <Nav.Link href="http://t.me/onecity_client_bot" target = "_blank">ChatBot</Nav.Link>
+            <Nav.Link href="/">Log Out</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -70,7 +59,7 @@ export default function Home() {
                       </div>
                       
                     <div class = "col-3">
-                    <a className = {styles.categoryLogo} href = "#">
+                    <a className = {styles.categoryLogo} href = "../financial_services">
                                <HiUserGroup size = {120} />
                             </a>
                             <a className = {styles.categoriesHeaders} href = "#">
