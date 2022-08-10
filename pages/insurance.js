@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/financialservices.module.css'
 
-import { MdKeyboardBackspace, MdHealthAndSafety } from 'react-icons/Md'
-import { AiFillCar, AiOutlineHome } from 'react-icons/Ai'
-import { BsUmbrella } from 'react-icons/Bs'
-import { RiSeedlingLine } from 'react-icons/Ri'
-import { TbWheelchair } from 'react-icons/Tb'
+import { MdKeyboardBackspace, MdHealthAndSafety } from 'react-icons/md'
+import { AiFillCar, AiOutlineHome } from 'react-icons/ai'
+import { BsUmbrella } from 'react-icons/bs'
+import { RiSeedlingLine } from 'react-icons/ri'
+import { TbWheelchair } from 'react-icons/tb'
 import Link from 'next/link'
 
 export default function financial_advisory() {

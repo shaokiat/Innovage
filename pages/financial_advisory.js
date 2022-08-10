@@ -1,9 +1,8 @@
-import Head from 'next/head'
 import styles from '../styles/financialservices.module.css'
-
-import { MdKeyboardBackspace, MdOutlineBusinessCenter } from 'react-icons/Md'
-import { FaPenSquare } from 'react-icons/Fa'
 import Link from 'next/link'
+
+import { MdKeyboardBackspace, MdOutlineBusinessCenter } from 'react-icons/md'
+import { FaPenSquare } from 'react-icons/fa'
 
 const data = [
   {

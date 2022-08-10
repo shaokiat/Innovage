@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/financialservices.module.css'
 
-import { MdKeyboardBackspace } from 'react-icons/Md'
+import { MdKeyboardBackspace } from 'react-icons/md'
 import Link from 'next/link'
 
 export default function financial_services() {

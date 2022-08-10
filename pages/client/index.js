@@ -4,13 +4,12 @@ import styles from '../../styles/clienthomepage.module.css'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 
 import { MdAccountCircle } from 'react-icons/Md'
-import { FaBalanceScale, FaFantasyFlightGames } from 'react-icons/Fa'
-import { HiUserGroup } from 'react-icons/Hi'
-import { GiNewspaper } from 'react-icons/Gi'
-import { BiCalculator } from 'react-icons/Bi'
+import { FaBalanceScale, FaFantasyFlightGames } from 'react-icons/fa'
+import { HiUserGroup } from 'react-icons/hi'
+import { GiNewspaper } from 'react-icons/gi'
+import { BiCalculator } from 'react-icons/bi'
 
 export default function Home() {
   return (
