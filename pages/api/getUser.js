@@ -2,14 +2,33 @@ import { connectToDatabase } from '../../utils/mongodb'
 
 export default async function handler(req, res) {
   switch (req.method) {
+    case 'GET': {
+      try {
+        const { db } = await connectToDatabase()
+        const allUsers = await db.collection('users').find({}).toArray()
+        console.log(allUsers)
+
+        return res.json({
+          message: allUsers,
+          success: true,
+        })
+      } catch (error) {
+        return res.json({
+          message: new Error(error).message,
+          success: false,
+        })
+      }
+    }
+
     case 'POST': {
       try {
         const { username, user } = req.body
-        console.log(username, user)
         const { db } = await connectToDatabase()
+        console.log(db)
         const findResult = await db
           .collection('users')
           .findOne({ username: username, user: user })
+        console.log(findResult)
         if (findResult === null) {
           return res.json({
             message: 'User not found',
