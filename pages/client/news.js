@@ -17,11 +17,11 @@ const imgStyle = {
 }
 
 
-const Home = () => {
+const News = () => {
   return (
     <>
       <Head>
-        <title>My page title</title>
+        <title>news</title>
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       
@@ -47,4 +47,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default News
