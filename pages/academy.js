@@ -1,31 +1,37 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 import styles from '../styles/financialservices.module.css'
-
-<<<<<<< HEAD
-
-import {MdKeyboardBackspace} from 'react-icons/md'
-=======
->>>>>>> 1f87f6eafaa5ce3c18be6e0cd9cefbcf0ab46596
+import { MdKeyboardBackspace } from 'react-icons/md'
 
 export default function financial_services() {
   return (
-    <Head>
-      <title>Financial Services</title>
+    <div>
+      <Head>
+        <title>Financial Services</title>
+      </Head>
+
       <div className="container">
-        <a href="/client/clientHome" className={styles.BackButton}>
-          <MdKeyboardBackspace size={40} />
-        </a>
-        <div className="row">
-          <a className={styles.Service1} href="/financial_advisory">
-            <h1 className={styles.test}> Financial Advisory</h1>
+        <Link href="/client/clientHome">
+          <a className={styles.BackButton}>
+            <MdKeyboardBackspace size={40} />
           </a>
+        </Link>
+        <div className="row">
+          <Link href="/financial_advisory">
+            <a className={styles.Service1}>
+              <h1 className={styles.test}> Financial Advisory</h1>
+            </a>
+          </Link>
         </div>
         <div className="row">
-          <a className={styles.Service2} href="/insurance">
-            <h1>Insurance</h1>
-          </a>
+          <Link href="/insurance">
+            <a className={styles.Service2}>
+              <h1>Insurance</h1>
+            </a>
+          </Link>
         </div>
       </div>
-    </Head>
+    </div>
   )
 }
