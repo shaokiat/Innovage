@@ -5,7 +5,7 @@ const BankerSignUp = () => {
   return (
     <div className="vh-100 d-flex flex-column align-items-center justify-content-center ">
       <h1 className="display-1 pb-3">Banker</h1>
-      <div className="w-50">
+      <div className="w-25">
         <SignUp user="banker" />
       </div>
     </div>
