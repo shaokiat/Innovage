@@ -13,7 +13,7 @@ export default function academy() {
 
       <title>Financial Services</title>
       <div className="container">
-        <Link href = "/client/clientHome" >
+        <Link href = "/client/home" >
             <a className={styles.BackButton}> <MdKeyboardBackspace size={40} /> </a>
         </Link>
         

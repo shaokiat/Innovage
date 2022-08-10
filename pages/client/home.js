@@ -7,7 +7,7 @@ import { HiUserGroup, HiOutlineAcademicCap } from 'react-icons/hi'
 import { BiCalculator } from 'react-icons/bi'
 import Link from 'next/link'
 
-export default function clientHome() {
+export default function home() {
   return (
     <div>
         <Head>

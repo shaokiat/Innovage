@@ -23,7 +23,7 @@ export default function account_bal() {
       <div className={styles.Background}>
         <div className="row offset-1">
           <div className="col">
-            <Link href="/client/clientHome">
+            <Link href="/client/home">
               <a className={styles.BankHeader}>OneCiti</a>
             </Link>
           </div>

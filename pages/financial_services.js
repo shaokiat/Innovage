@@ -12,7 +12,7 @@ export default function financial_services() {
       </Head>
 
       <div className="container">
-        <Link href="/client/clientHome">
+        <Link href="/client/home">
           <a className={styles.BackButton}>
             <MdKeyboardBackspace size={40} />
           </a>
