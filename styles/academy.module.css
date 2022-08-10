@@ -1,6 +1,8 @@
 /* Financial Services CSS */
+.bg {
+    height: 1500px;
+}
 .Service1 {
-    border : 3px solid white;
     margin-top : 2em;
     height: 200px;
     border-radius: 6px;
@@ -8,21 +10,53 @@
     text-decoration: none;
     color : white;
     padding: 70px;
-    background-image: url('https://miro.medium.com/max/1200/1*-UpdtERkDsx-8QPmZOj-wQ.png');
+    background-image: url('https://sail.co.in/sites/default/files/banner/2020-07/Financials.jpg');
     box-shadow: 0px 10px 20px 1px black;
+    background-position: 1px;
 }
 
 .Service2 {
-    border : 3px solid white;
     margin-top : 5em;
     height: 200px;
     border-radius: 6px;
     display: block;
     text-decoration: none;  
-    color : rgb(255, 255, 255); 
+    color : black; 
     align-content: center;
     padding : 70px;
-    background-image: url('https://www.passionateinmarketing.com/wp-content/uploads/2021/09/Insurance-Website_1775x462px_Option-2-e1606901611756.jpg');
+    background-image: url('https://www.svcbank.com/portals/0/financials.jpg?ver=2017-06-06-064021-793');
+    background-repeat: no-repeat;
+    background-size:auto;
+    box-shadow: 0px 10px 20px 1px black;
+    background-position: 1px;
+}
+
+.Service3 {
+    margin-top : 5em;
+    height: 200px;
+    border-radius: 6px;
+    display: block;
+    text-decoration: none;  
+    color : white; 
+    align-content: center;
+    padding : 70px;
+    background-image: url('https://www.acuitykp.com/wp-content/uploads/2022/04/1600x432px-Header-Bnr.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    box-shadow: 0px 10px 20px 1px black;
+    background-position: 1px;
+}
+
+.Service4 {
+    margin-top : 5em;
+    height: 200px;
+    border-radius: 6px;
+    display: block;
+    text-decoration: none;  
+    color : black; 
+    align-content: center;
+    padding : 70px;
+    background-image: url('https://img.freepik.com/premium-vector/city-skyline-illustration-blue-city-silhouette_54887-20.jpg?w=2000');
     background-repeat: no-repeat;
     background-size:auto;
     box-shadow: 0px 10px 20px 1px black;
