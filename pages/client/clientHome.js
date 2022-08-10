@@ -6,10 +6,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import { MdAccountCircle } from 'react-icons/Md'
-import {FaBalanceScale, FaFantasyFlightGames} from 'react-icons/Fa'
-import {HiUserGroup,HiOutlineAcademicCap} from 'react-icons/Hi'
-import {BiCalculator} from 'react-icons/Bi'
+import { MdAccountCircle } from 'react-icons/md'
+import {FaBalanceScale, FaFantasyFlightGames} from 'react-icons/fa'
+import {HiUserGroup,HiOutlineAcademicCap} from 'react-icons/hi'
+import {BiCalculator} from 'react-icons/bi'
 
 export default function Home() {
   return (

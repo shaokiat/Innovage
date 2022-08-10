@@ -1,17 +1,17 @@
 import styles from '../styles/financialservices.module.css'
 
-import { MdKeyboardBackspace, MdHealthAndSafety } from 'react-icons/md'
-import { AiFillCar, AiOutlineHome } from 'react-icons/ai'
-import { BsUmbrella } from 'react-icons/bs'
-import { RiSeedlingLine } from 'react-icons/ri'
-import { TbWheelchair } from 'react-icons/tb'
+import { mdkeyboardbackspace, mdhealthandsafety } from 'react-icons/md'
+import { aiFillCar, aioutlinehome } from 'react-icons/ai'
+import { bsumbrella } from 'react-icons/bs'
+import { riseedlingline } from 'react-icons/ri'
+import { tbwheelchair } from 'react-icons/tb'
 import Link from 'next/link'
 
 export default function financial_advisory() {
   return (
     <div>
       <div className="container">
-        <Link href="/client">
+        <Link href="/financial_services">
           <a className={styles.insuranceBack}>
             <MdKeyboardBackspace size={40} />
           </a>
