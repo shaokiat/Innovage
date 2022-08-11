@@ -65,7 +65,7 @@ export default function Home() {
 
         <div className="col-3">
           <Link href="../account_bal">
-            <a className={styles.categoryLogo} target="_blank" rel="noreferrer">
+            <a className={styles.categoryLogo}>
               <MdAccountCircle size={120} />
             </a>
           </Link>
@@ -76,7 +76,7 @@ export default function Home() {
 
         <div className="col-3">
           <Link href="https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action?ts=1660136063283">
-            <a className={styles.categoryLogo}>
+            <a className={styles.categoryLogo} target="_blank" rel="noreferrer">
               <FaBalanceScale size={120} />
             </a>
           </Link>
