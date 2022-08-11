@@ -28,14 +28,14 @@ export default function Home() {
                 <div className = "row">
                       <div className = "col">
                             <div className = "row">
-                                  <div className = "col-4">
+                                  <div className = "col-2">
                                               <a href = "#" className = {styles.box1}>
                                                     <div> <BsReverseLayoutTextSidebarReverse size={100} />  </div>
                                                     <div className = {styles.logoHeader1}> Daily Tasks </div>
                                               </a>
                                   </div>
 
-                                  <div className = "col-4">
+                                  <div className = "col-2">
                                       <a href = "#" className = {styles.box1}>
                                             <div> <RiBankFill size={100} /> </div>
                                             <div className = {styles.logoHeader1}> Bank Services </div>
@@ -45,13 +45,13 @@ export default function Home() {
                             </div>
 
                             <div className = "row">
-                                <div className = "col-4">
+                                <div className = "col-2">
                                       <a href = "#" className = {styles.box1}>
                                             <div> <HiUserGroup size={100} /> </div>
                                             <div className = {styles.logoHeader1}> Clients</div>
                                         </a>
                                 </div>
-                                <div className = "col-4">
+                                <div className = "col-2">
                                         <a href = "#" className = {styles.box1}>
                                               <div> <TiNews size={100} /> </div>
                                               <div className = {styles.logoHeader1}> Knowledge Management </div>

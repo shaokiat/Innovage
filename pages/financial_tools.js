@@ -12,7 +12,22 @@ export default function financial_services() {
                 <title>Financial Tools</title>
             </Head>
 
-            
+            <div className = "container">
+                <div className = "row">
+                    <div className = "col">
+                        <div className = {styles.leftgrid}>
+                            Testing
+                        </div>
+                    </div>
+                    <div className = "col">
+                        <div>
+                            Testing
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
     )
