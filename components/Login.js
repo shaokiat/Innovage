@@ -5,12 +5,14 @@ import Router from 'next/router'
 const Login = ({ user }) => {
   const [currentUser, setCurrentUser] = useState({
     username: '',
-    password: '',
+    user: '',
+    _id: '',
+    hnw: false,
   })
   const [showError, setShowError] = useState(false)
 
-  const checkUser = async () => {
-    console.log(currentUser.username)
+  const handleSubmit = async (e) => {
+    e.preventDefault()
     const response = await fetch('/api/getUser', {
       method: 'POST',
       headers: {
@@ -22,20 +24,17 @@ const Login = ({ user }) => {
       }),
     })
     const { success, message } = await response.json()
-    console.log(message)
+
     if (!success) {
       setShowError(true)
-    }
-    console.log(success)
-    return success
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    const userExists = await checkUser()
-    if (userExists) {
+    } else {
       sessionStorage.setItem('username', JSON.stringify(currentUser.username))
-      Router.push(`/${user}`)
+      console.log(message)
+      if (message.hnw) {
+        Router.push(`/${user}/homeplus`)
+      } else {
+        Router.push(`/${user}/home`)
+      }
     }
   }
 
@@ -48,7 +47,7 @@ const Login = ({ user }) => {
           <input
             type="username"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Enter username"
             onChange={(e) =>
               setCurrentUser({ ...currentUser, username: e.target.value })
             }
@@ -60,9 +59,6 @@ const Login = ({ user }) => {
             type="password"
             className="form-control"
             placeholder="Enter password"
-            onChange={(e) =>
-              setCurrentUser({ ...currentUser, password: e.target.value })
-            }
           />
         </div>
         <div className="mb-3">

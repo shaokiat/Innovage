@@ -24,26 +24,14 @@ const data = [
     department: 'Budgeting / Investment',
     image: new URL('../public/Agent3.jpg', import.meta.url),
   },
-  {
-    name: 'Su-Ann',
-    specialization: 'Specialized in Retirement Planning',
-    department: 'Budgeting / Investment',
-    image: new URL('../public/Agent3.jpg', import.meta.url),
-  },
-  {
-    name: 'Su-Ann',
-    specialization: 'Specialized in Retirement Planning',
-    department: 'Budgeting / Investment',
-    image: new URL('../public/Agent3.jpg', import.meta.url),
-  },
 ]
 
 export default function financial_advisory() {
   return (
     <div>
-        <Head>
-          <title>Financial Advisory</title>
-        </Head>
+      <Head>
+        <title>Financial Advisory</title>
+      </Head>
       <div className="container">
         <Link href="/financial_services">
           <a className={styles.adviseBack}>

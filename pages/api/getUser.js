@@ -24,11 +24,10 @@ export default async function handler(req, res) {
       try {
         const { username, user } = req.body
         const { db } = await connectToDatabase()
-        console.log(db)
         const findResult = await db
           .collection('users')
           .findOne({ username: username, user: user })
-        console.log(findResult)
+        console.log('findresult', findResult)
         if (findResult === null) {
           return res.json({
             message: 'User not found',
