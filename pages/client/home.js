@@ -102,13 +102,23 @@ export default function Home() {
 
         <div className="col-3">
           <Link href="https://t.me/onecity_client_bot">
-            <a className={styles.btmcategoryLogo}>
+            <a
+              className={styles.btmcategoryLogo}
+              target="_blank"
+              rel="noreferrer"
+            >
               <BiBot size={120} />
             </a>
           </Link>
 
           <Link href="https://t.me/onecity_client_bot">
-            <a className={styles.btmcategoriesHeaders}>Chatbot</a>
+            <a
+              className={styles.btmcategoriesHeaders}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Chatbot
+            </a>
           </Link>
         </div>
       </div>
