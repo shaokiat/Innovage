@@ -54,13 +54,7 @@ export default function Home() {
             </a>
           </Link>
           <Link href="../account_bal">
-            <a
-              className={styles.categoriesHeaders}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Accounts
-            </a>
+            <a className={styles.categoriesHeaders}>Accounts</a>
           </Link>
         </div>
 
@@ -72,7 +66,13 @@ export default function Home() {
           </Link>
 
           <Link href="https://www.citibank.com.sg/SGGCB/JSO/username/signon/flow.action?ts=1660136063283">
-            <a className={styles.categoriesHeaders}>Stock Exchange</a>
+            <a
+              className={styles.categoriesHeaders}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Stock Exchange
+            </a>
           </Link>
         </div>
       </div>
