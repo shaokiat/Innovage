@@ -1,111 +1,116 @@
 .header {
   display: flex;
   justify-content: center;
-  margin: 30px;
-}
-
-.oneCitigrid {
-  display: flex;
-  margin-top: 1.5em;
-  height: 5em;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.oneCitiHeader {
-  font-family: 'Play';
-  margin: 0 auto;
-  margin-top: 2%;
-  justify-content: center;
-  padding-right: 20px;
-  font-size: 2.5em;
-  text-shadow: 10px 20px 20px 1px;
-}
-
-.welcomeGrid {
-  display: flex;
-  height: 5em;
-  width: 71%;
-  margin: 0 auto;
-  margin-top: 1%;
-}
-
-.welcomeHeader {
-  font-family: 'Play';
-  margin: 0 auto;
-  margin-top: 1%;
-  justify-content: center;
-  font-size: 2.5em;
-}
-
-.topserviceBox {
-  border: 6px solid rgb(255, 80, 80);
-  height: 400px;
-  width: 450px;
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 10px;
-  display: block;
-  background-color: rgb(255, 255, 255);
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  margin-top: 3em;
-  text-decoration: none;
-  text-align: center;
-  margin-bottom: 3em;
-  box-shadow: 0px 5px 20px 1px;
-  position: relative;
-}
-
-.lowserviceBox {
-  border: 6px solid rgb(0, 255, 0);
-  height: 400px;
-  width: 450px;
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 10px;
-  display: block;
-  background-color: rgb(255, 255, 255);
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  margin-top: 3em;
-  text-decoration: none;
-  text-align: center;
-  margin-bottom: 3em;
-  box-shadow: 0px 5px 20px 1px;
-  position: relative;
-}
-
-.midserviceBox {
-  border: 6px solid rgb(255, 208, 0);
-  height: 400px;
-  width: 450px;
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 10px;
-  display: block;
-  background-color: rgb(255, 255, 255);
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  margin-top: 3em;
-  text-decoration: none;
-  text-align: center;
-  margin-bottom: 3em;
-  box-shadow: 0px 5px 20px 1px;
-  position: relative;
-}
-
-.taskIcon {
   margin-top: 70px;
+  font-size:40px;
+  font-family: 'Overpass Mono', monospace;
 }
-.taskNames {
+
+.box1 {
+  border : 1px solid white;
+  margin-left: 250px;
+  margin-top: 100px;
+  background-color: rgb(244, 244, 244);
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+  box-shadow: 1px 3px 15px 2px black;
+  color : black;
+  display: block;
+  text-align: center;
+  padding : 40px;
+  text-decoration: none;
+}
+
+.box2 {
+  border : 1px solid white;
+  margin-top: 100px;
+  background-color: rgb(244, 244, 244);
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+  box-shadow: 1px 3px 15px 2px black;
+  color : black;
+  display: block;
+  text-align: center;
+  padding : 40px;
+  text-decoration: none;
+  position:relative;
+}
+
+.logoHeader1 {
+  font-size : 40px;
+  font-family : 'Overpass Mono', monospace;
   margin-top: 10px;
-  font-size: 30px;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.glancebg {
+  margin-top: 30px;
+  background-color: rgb(207, 248, 253);
+  height : 1500px;
+  margin-right:100px;
+  border-radius: 20px;
+  padding: 50px;
+  padding-top:20px;
+}
+
+.newsHeader {
+  color : black;
+  font-size: 50px;
+  font-family: 'Coiny', cursive;
+  text-align: center;
+}
+.article1 {
+  border-radius: 20px;
+  height: 300px;
+  margin-top:25px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size:40px;
+  text-align: center;
+  padding : 20px;
+  background-color: rgb(249, 174, 162);
+}
+.article2 {
+  border-radius: 20px;
+  height: 300px;
+  margin-top:25px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size:40px;
+  text-align: center;
+  padding : 20px;
+  background-color: rgb(249, 174, 162);
+}
+.article3 {
+  border-radius: 20px;
+  height: 300px;
+  margin-top:25px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size:40px;
+  text-align: center;
+  padding : 20px;
+  background-color: rgb(254, 254, 160);
+}
+.article4 {
+  border-radius: 20px;
+  height: 300px;
+  margin-top:25px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size:40px;
+  text-align: center;
+  padding : 20px;
+  background-color: rgb(141, 241, 166);
+}
+
+.articleBody1 {
+  color: black;
+  font-size:30px;
+  text-align: left;
 }

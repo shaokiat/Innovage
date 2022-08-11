@@ -1,76 +1,80 @@
+body .bg{
+    background-color:rgb(33, 33, 33);
+    height: 1300px;
+}
+
 .header {
     display: flex;
     justify-content: center;
-    margin-top: 70px;
-    font-family: 'Arima', cursive;
+    font-family: 'Aboreto', cursive;
     font-size: 50px;
+    color: #FFD700;
+    margin-top:80px;
 }
 
 .header1 {
     display: flex;
     justify-content: center;
-    margin:30px;
-    font-family: 'Arima', cursive;
-    font-size: 90px;
+    font-family: 'Aboreto', cursive;
+    font-size: 50px;
+    color: #FFD700;
+    margin-top:10px;
 }
 
 .categoriesHeaders {
-    font-family :  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Aboreto', cursive;
     font-size:30px;
+    font-weight:500;
     position:relative;
     display:block;
     text-decoration: none;
-    color: white;
+    color: #FFD700;
     padding-top:8px;
     text-shadow: rgba(255, 255,255,0.3);
     text-align:center;
-    font-family: 'alegreya', cursive;
 }
 
 .categoryLogo {
     color : white;
     display:block;
-    margin-top:30px;
-    background-color:rgba(255, 255,255,0.3);
-    box-shadow: 5px 3px 15px 2px rgb(36, 36, 36);
-    border-radius:8%;
+    margin-top:150px;
+    background-color:#dac02b;;
+    box-shadow: 0px 5px 8px 2px black;
+    border-radius:50%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     width: 30%;
-    height: auto;
+    height: 155px;
     padding: 10px;
-    margin-top:50px;
 }
 
 .btmcategoriesHeaders {
-    font-family :  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Aboreto', cursive;
     font-size:30px;
+    font-weight:500;
     position:relative;
     display:block;
     text-decoration: none;
-    color: white;
+    color: #FFD700;
     padding-top:8px;
     text-shadow: rgba(255, 255,255,0.3);
     text-align:center;
-    font-family: 'alegreya', cursive;
 
 }
 
 .btmcategoryLogo{
     color : white;
     display:block;
-    margin-top:150px;
-    background-color:rgba(255, 255,255,0.3);
-    box-shadow: 5px 3px 15px 2px rgb(36, 36, 36);
-    border-radius:8%;
+    margin-top:100px;
+    background-color:#dac02b;;
+    box-shadow: 0px 5px 8px 2px black;
+    border-radius:50%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     width: 30%;
-    height: auto;
+    height: 155px;
     padding: 10px;
-
-    
 }
 

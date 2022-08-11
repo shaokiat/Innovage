@@ -15,134 +15,105 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Welcome to OneCiti</title>
+          <title>Welcome to OneCiti</title>
       </Head>
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">OneCiti</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Settings</Nav.Link>
-              <Nav.Link href="http://t.me/onecity_biz_bot" target="_blank">
-                ChatBot
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
 
-      <span className={styles.header}>
-        <h1>OneCiti</h1>
-      </span>
-      <span>
-        <h1 className={styles.header}> Welcome Back, User</h1>
-      </span>
+      <div>
+          <div class = "row">
+              <div className = {styles.header}>
+                  OneCiti-P
+              </div>
+            </div>
 
-      <div className="row justify-content-center">
-        <div className="col-3">
-          <a href="" className={styles.lowserviceBox}>
-            <div className={styles.taskIcon}>
-              <BsReverseLayoutTextSidebarReverse size={70} />
-            </div>
-            <div className={styles.taskNames}>Daily Tasks</div>
+                <div class = "row">
+                      <div class = "col">
+                            <div class = "row">
+                                  <div class = "col-4">
+                                              <a href = "#" className = {styles.box1}>
+                                                    <div> <BsReverseLayoutTextSidebarReverse size={100} />  </div>
+                                                    <div className = {styles.logoHeader1}> Daily Tasks </div>
+                                              </a>
+                                  </div>
 
-            <div>
-              Pending Tasks : <b>2</b>
-              <br />
-              Upcoming Tasks : <b>3</b>
-              <br />
-              Upcoming Meeting : <b>1</b>
-            </div>
-          </a>
-        </div>
+                                  <div class = "col-4">
+                                      <a href = "#" className = {styles.box1}>
+                                            <div> <RiBankFill size={100} /> </div>
+                                            <div className = {styles.logoHeader1}> Bank Services </div>
+                                        </a>
 
-        <div className="col-3">
-          <a href="" className={styles.midserviceBox}>
-            <div className={styles.taskIcon}>
-              <RiBankFill size={70} />
-            </div>
-            <div className={styles.taskNames}>Bank Services</div>
+                                  </div>
+                            </div>
 
-            <div>
-              Accounts Approval : <b>5</b>
-              <br />
-              Loans Review : <b>2</b>
-              <br />
-              Bank Statements : <b>3</b>
-            </div>
-          </a>
-        </div>
+                            <div class = "row">
+                                <div class = "col-4">
+                                      <a href = "#" className = {styles.box1}>
+                                            <div> <HiUserGroup size={100} /> </div>
+                                            <div className = {styles.logoHeader1}> Clients</div>
+                                        </a>
+                                </div>
+                                <div class = "col-4">
+                                        <a href = "#" className = {styles.box1}>
+                                              <div> <TiNews size={100} /> </div>
+                                              <div className = {styles.logoHeader1}> Knowledge Management </div>
+                                        </a>
+                                </div>
+                            </div>
+                      </div>
 
-        <div className="col-3">
-          <a href="" className={styles.topserviceBox}>
-            <div className={styles.taskIcon}>
-              <FaBalanceScale size={70} />
-            </div>
-            <div className={styles.taskNames}>Stock Exchange</div>
+                      <div class = "col">
+                          <div className = {styles.glancebg}>
+                                <div class = "row">
+                                      <div className = {styles.newsHeader}>
+                                        At A Glance
+                                      </div>
+                                </div>
+                                <div class = "row">
+                                      <a href = "#" className = {styles.article1}>
+                                      <BsReverseLayoutTextSidebarReverse size={80} /> Daily Tasks 
+                                        <div className = {styles.articleBody1}>
+                                          <br></br>
+                                              <li>Approve accounts for Jenny, George and Cynthia</li>
+                                              <li>Due : Today </li>
+                                        </div>
+                                      </a>
 
-            <div>
-              New Orders : <b>7</b>
-              <br />
-              For Review: <b>3</b>
-              <br />
-              GTD Orders : <b>4</b>
-            </div>
-          </a>
-        </div>
-      </div>
+                                      <a href = "#" className = {styles.article2}>
+                                        <HiUserGroup size={100} /> Clients 
+                                        <div className = {styles.articleBody1}>
+                                              <li>Client Meeting with Jessica</li>
+                                              <li>Due : Today 14:00</li>
+                                        </div>
+                                      </a>
 
-      <div className="row justify-content-center">
-        <div className="col-3">
-          <a href="" className={styles.topserviceBox}>
-            <div className={styles.taskIcon}>
-              <HiUserGroup size={70} />
-            </div>
-            <div className={styles.taskNames}>Client Advisory</div>
+                                      <a href = "#" className = {styles.article3}>
+                                        <TiNews size={100} /> Daily Tasks 
+                                        <div className = {styles.articleBody1}>
+                                          <br></br>
+                                              <li>Check and complete accounts for Donuts.co</li>
+                                              <li>Due : 14 August 2022</li>
+                                        </div>
+                                      </a>
 
-            <div>
-              Client Meeting : <b>2</b>
-              <br />
-              New Clients: <b>2</b>
-              <br />
-              Client Request : <b>3</b>
-            </div>
-          </a>
-        </div>
-        <div className="col-3">
-          <a href="" className={styles.lowserviceBox}>
-            <div className={styles.taskIcon}>
-              <FaMoneyBillWave size={70} />
-            </div>
-            <div className={styles.taskNames}>Cash Services</div>
+                                      <a href = "#" className = {styles.article4}>
+                                        <TiNews size={100} /> Knowledge Management
+                                        <div className = {styles.articleBody1}>
+                                          <br></br>
+                                              <li>New City Promotion : 5% cashback for new cardholders</li>
+                                              <li>Due : 31 August 2022</li>
+                                        </div>
+                                      </a>
+                                </div>
 
-            <div>
-              Wire Transfers : <b>3</b>
-              <br />
-              Forex Orders: <b>5</b>
-              <br />
-              Cash Exchange Request: <b>2</b>
+                        
+                          </div>
+                      </div>
+                </div>
             </div>
-          </a>
-        </div>
-        <div className="col-3">
-          <a href="" className={styles.midserviceBox}>
-            <div className={styles.taskIcon}>
-              <TiNews size={70} />
-            </div>
-            <div className={styles.taskNames}>Knowledge Management</div>
 
-            <div>
-              Important Updates : <b>2</b>
-              <br />
-              New Promotions : <b>2</b>
-              <br />
-              Notices : <b>8</b>
-            </div>
-          </a>
-        </div>
-      </div>
+
+
+
+
     </>
   )
 }
