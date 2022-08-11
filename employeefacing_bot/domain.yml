@@ -11,10 +11,16 @@ intents:
   - check_emails
   - check_events
   - contact_client
+  - Bob
 
 actions:
   - action_start
   - action_outstanding_clients
+  - action_check_email
+  - action_check_promo
+  - action_client_list
+  - action_contact_bob
+
 
 responses:
   utter_greet:

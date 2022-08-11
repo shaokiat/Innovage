@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/bankhomepage.module.css'
+import Link from 'next/link'
 
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
@@ -8,8 +9,8 @@ import Navbar from 'react-bootstrap/Navbar'
 import { BsReverseLayoutTextSidebarReverse } from 'react-icons/bs'
 import { RiBankFill } from 'react-icons/ri'
 import { HiUserGroup } from 'react-icons/hi'
-import { FaBalanceScale, FaMoneyBillWave } from 'react-icons/fa'
 import { TiNews } from 'react-icons/ti'
+import {BiBot} from 'react-icons/bi'
 
 export default function Home() {
   return (
@@ -17,7 +18,13 @@ export default function Home() {
       <Head>
           <title>Welcome to OneCiti</title>
       </Head>
-
+      <div className = "row">
+            <div className = "container">
+                  <Link href = "https://t.me/onecity_biz_bot" >
+                         <a className={styles.BackButton} target = "_blank"> <BiBot size={60} /> </a>
+                  </Link>
+            </div>
+      </div>
       <div>
           <div className = "row">
               <div className = {styles.header}>

@@ -62,7 +62,7 @@ class TelegramOutput(TeleBot, OutputChannel):
         if button_type == "inline":
             reply_markup = InlineKeyboardMarkup()
             button_list = [
-                InlineKeyboardButton(s["title"], callback_data=s["payload"])
+                InlineKeyboardButton(s["title"], callback_data=s["payload"], url = s["url"])
                 for s in buttons
             ]
             reply_markup.row(*button_list)

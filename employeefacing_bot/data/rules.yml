@@ -12,6 +12,26 @@ rules:
   - intent: check_outstanding
   - action: action_outstanding_clients
 
+- rule: check emails
+  steps:
+  - intent: check_emails
+  - action: action_check_email
+
+- rule: check emails
+  steps:
+  - intent: check_events
+  - action: action_check_promo
+
+- rule: contact clients
+  steps:
+  - intent: contact_client
+  - action: action_client_list
+
+- rule: contact Bob
+  steps:
+  - intent: Bob
+  - action: action_contact_bob
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
