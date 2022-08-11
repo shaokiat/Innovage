@@ -1,5 +1,6 @@
 import styles from '../../styles/clienthomepage.module.css'
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
 
 import { MdAccountCircle } from 'react-icons/md'
 import { FaBalanceScale, FaFantasyFlightGames } from 'react-icons/fa'
@@ -8,16 +9,17 @@ import { BiCalculator, BiBot } from 'react-icons/bi'
 import Link from 'next/link'
 
 export default function Home() {
-  const getUserOrDefault = () => {
+  const [username, setUsername] = useState('User')
+
+  useEffect(() => {
     if (typeof window !== 'undefined') {
-      const username = sessionStorage.getItem('username')
-      if (!username) {
-        return 'User'
-      } else {
-        return JSON.parse(username)
+      const name = JSON.parse(sessionStorage.getItem('username'))
+      if (name) {
+        setUsername(name)
       }
     }
-  }
+  }, [])
+
   return (
     <div>
       <Head>
@@ -31,7 +33,7 @@ export default function Home() {
 
       <div className="row">
         <div className={styles.header1}>
-          <h1> Welcome Back, {getUserOrDefault()}</h1>
+          <h1> Welcome Back, {username}</h1>
         </div>
       </div>
 

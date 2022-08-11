@@ -1,30 +1,40 @@
 import styles from '../../styles/clienthomepagePLUS.module.css'
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
 
 import { MdAccountCircle } from 'react-icons/md'
 import { FaBalanceScale, FaFantasyFlightGames } from 'react-icons/fa'
 import { HiUserGroup, HiOutlineAcademicCap } from 'react-icons/hi'
 import { BiCalculator } from 'react-icons/bi'
-import {BsFillTelephoneFill} from 'react-icons/bs'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import Link from 'next/link'
 
-export default function home() {
-  return (
-    <div className = {styles.bg}>
-        <Head>
-          <title>Home</title>
-        </Head>
-        <div className = "row">
-            <div className={styles.header}>
-                  <h1>OneCiti +</h1>
-            </div>
-        </div>
-        <div className = "row">
-            <div className={styles.header1}>
-                  
-            </div>
-        </div>
+export default function HomePlus() {
+  const [username, setUsername] = useState('User')
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const name = JSON.parse(sessionStorage.getItem('username'))
+      if (name) {
+        setUsername(name)
+      }
+    }
+  }, [])
+  return (
+    <div className={styles.bg}>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <div className="row">
+        <div className={styles.header}>
+          <h1>OneCiti +</h1>
+        </div>
+      </div>
+      <div className="row">
+        <div className={styles.header1}>
+          <h1> Welcome Back, {username}</h1>
+        </div>
+      </div>
 
       <div className="row justify-content-center">
         <div className="col-3">
