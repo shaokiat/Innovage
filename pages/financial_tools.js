@@ -14,7 +14,7 @@ export default function financial_services() {
 
             <div className = "container">
                 <div className = "row">
-                    <div className = "col-5">
+                    <div className = "col-5 offset-1">
                         <a href = "#" className = {styles.svc1}> Tax Calculator </a>
                     </div>
                     <div className = "col">
@@ -25,7 +25,7 @@ export default function financial_services() {
                 </div>
 
                 <div className = "row">
-                    <div className = "col-5">
+                    <div className = "col-5 offset-1">
                         <a href="#" className = {styles.svc3}> Financial Goal Setting </a>
                     </div>
                     <div className = "col">
