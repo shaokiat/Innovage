@@ -13,13 +13,13 @@ export default function home() {
         <Head>
           <title>Home</title>
         </Head>
-        <div class = "row">
+        <div className = "row">
               <div className={styles.header}>
                   <h1  className={styles.header} >OneCiti</h1>
               </div>
         </div>
 
-        <div class = "row">
+        <div className = "row">
             <div className = {styles.header1}>
                   <h1 > Welcome Back, User</h1>
             </div>
