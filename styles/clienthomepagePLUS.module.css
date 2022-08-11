@@ -1,3 +1,18 @@
+.logout{ 
+    margin-left:1100px;
+    margin-top: 80px;
+    display: inline-block;
+    text-decoration: none;
+    background-color:#dac02b;
+    width:90px;
+    height:30px;
+    border-radius:10px;
+    color : black;
+    text-align: center;
+    font-family: 'Aboreto', cursive;
+    padding:3px;
+}
+
 body .bg{
     background-color:rgb(33, 33, 33);
     height: 1300px;
@@ -9,7 +24,6 @@ body .bg{
     font-family: 'Aboreto', cursive;
     font-size: 50px;
     color: #FFD700;
-    margin-top:80px;
 }
 
 .header1 {
@@ -38,7 +52,7 @@ body .bg{
     color : white;
     display:block;
     margin-top:150px;
-    background-color:#dac02b;;
+    background-color:#dac02b;
     box-shadow: 0px 5px 8px 2px black;
     border-radius:50%;
     margin-left: auto;

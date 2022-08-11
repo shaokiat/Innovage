@@ -1,9 +1,24 @@
+.BackButton {
+  margin-top: 150px;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  color: Black;
+  background-color: rgb(170, 170, 170);
+  box-shadow: 0px 2px 8px 2px black;
+  margin-left: 150px;
+}
+
 .svc1 {
-    margin-top: 200px;
+    margin-top: 40px;
     height: 300px;
     width: 300px;
     border-radius:30px;
-    margin-left:50px;
+    margin-left:150px;
     text-align: center;
     padding :90px;
     font-family : "poppin";
@@ -19,11 +34,11 @@
 }
 
 .svc2 {
-    margin-top: 200px;
+    margin-top: 40px;
     height: 300px;
     width: 300px;
     border-radius:30px;
-    margin-left:50px;
+    margin-left:150px;
     text-align: center;
     padding :90px;
     font-family : "poppin";
@@ -45,7 +60,7 @@
     height: 300px;
     width: 300px;
     border-radius:30px;
-    margin-left:50px;
+    margin-left:150px;
     text-align: center;
     padding :70px;
     font-family : "poppin";
@@ -65,7 +80,7 @@
     height: 300px;
     width: 300px;
     border-radius:30px;
-    margin-left:50px;
+    margin-left:150px;
     text-align: center;
     padding :90px;
     font-family : "poppin";

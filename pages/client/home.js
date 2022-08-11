@@ -6,7 +6,10 @@ import { MdAccountCircle } from 'react-icons/md'
 import { FaBalanceScale, FaFantasyFlightGames } from 'react-icons/fa'
 import { HiUserGroup, HiOutlineAcademicCap } from 'react-icons/hi'
 import { BiCalculator, BiBot } from 'react-icons/bi'
+
+
 import Link from 'next/link'
+
 
 export default function Home() {
   const [username, setUsername] = useState('User')
@@ -25,6 +28,17 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
+
+          <div className = "row">
+            <div className = "container">
+              <Link href = "https://innovage.vercel.app">
+                  <a className = {styles.logout}>
+                        Log Out
+                  </a>
+                </Link>
+            </div>
+          </div>
+
       <div className="row">
         <div className={styles.header}>
           <h1 className={styles.header}>OneCiti</h1>

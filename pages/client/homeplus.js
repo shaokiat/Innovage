@@ -22,6 +22,16 @@ export default function HomePlus() {
   }, [])
   return (
     <div className={styles.bg}>
+
+                <div className = "row">
+                            <div className = "container">
+                            <Link href="https://innovage.vercel.app">
+                                <a className = {styles.logout}>
+                                      Log Out
+                                </a>
+                                </Link>
+                            </div>
+                          </div>
       <Head>
         <title>Home</title>
       </Head>
