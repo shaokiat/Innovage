@@ -14,14 +14,23 @@ export default function financial_services() {
 
             <div className = "container">
                 <div className = "row">
-                    <div className = "col">
-                        <div className = {styles.leftgrid}>
-                            Testing
-                        </div>
+                    <div className = "col-5">
+                        <a href = "#" className = {styles.svc1}> Tax Calculator </a>
                     </div>
                     <div className = "col">
                         <div>
-                            Testing
+                                <a href = "#" className = {styles.svc2}> Loan Calculator </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className = "row">
+                    <div className = "col-5">
+                        <a href="#" className = {styles.svc3}> Financial Goal Setting </a>
+                    </div>
+                    <div className = "col">
+                        <div>
+                                <div className = {styles.svc4}> Investment Planning </div>
                         </div>
                     </div>
                 </div>

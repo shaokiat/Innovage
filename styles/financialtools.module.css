@@ -1,7 +1,83 @@
-.leftgrid {
-    border: 1px solid white;
+.svc1 {
     margin-top: 200px;
     height: 300px;
     width: 300px;
     border-radius:30px;
+    margin-left:50px;
+    text-align: center;
+    padding :90px;
+    font-family : "poppin";
+    font-size:30px; 
+    box-sizing: border-box;
+    box-shadow: 1px 2px 8px 1px rgb(36, 36, 36);
+    display:block;
+    text-decoration: none;
+    background-image:url('https://www.techfunnel.com/wp-content/uploads/2018/04/financial-management-tools-for-small-business.jpg');
+    color : black;
+    font-weight:700px;
+    background-position:-200px 0px;
+}
+
+.svc2 {
+    margin-top: 200px;
+    height: 300px;
+    width: 300px;
+    border-radius:30px;
+    margin-left:50px;
+    text-align: center;
+    padding :90px;
+    font-family : "poppin";
+    font-size:30px; 
+    box-sizing: border-box;
+    box-shadow: 1px 2px 8px 1px rgb(36, 36, 36);
+    display:block;
+    text-decoration: none;
+    background-image:url('https://www.finance-magazin.de/wp-content/uploads/2021/06/Asset_Based_Finance_Transformation_Maturus_Expertenbeitrag_Bildquelle_wutzkoh_-_stock.adobe_.com_-696x356.jpeg');
+    color : black;
+    font-weight:700px;
+    background-position:-250px 0px;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.svc3 {
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius:30px;
+    margin-left:50px;
+    text-align: center;
+    padding :70px;
+    font-family : "poppin";
+    font-size:30px; 
+    box-sizing: border-box;
+    box-shadow: 1px 2px 8px 1px rgb(36, 36, 36);
+    display:block;
+    text-decoration: none;
+    background-image:url('https://soleraam.com/wp-content/uploads/2020/03/smart-financial-goals.jpeg');
+    color : white;
+    font-weight:700px;
+    background-position:-400px 0px;
+    background-size:cover;
+}
+.svc4 {
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius:30px;
+    margin-left:50px;
+    text-align: center;
+    padding :90px;
+    font-family : "poppin";
+    font-size:30px; 
+    box-sizing: border-box;
+    box-shadow: 1px 2px 8px 1px rgb(36, 36, 36);
+    display:block;
+    text-decoration: none;
+    background-image:url('https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    color : white;
+    font-weight:700px;
+    background-position:0px 0px;
+    background-size:cover;
+    margin-bottom:150px;
 }
