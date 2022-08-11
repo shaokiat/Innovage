@@ -14,12 +14,12 @@ export default function home() {
         <Head>
           <title>Home</title>
         </Head>
-        <div class = "row">
+        <div className = "row">
             <div className={styles.header}>
                   <h1>OneCiti +</h1>
             </div>
         </div>
-        <div class = "row">
+        <div className = "row">
             <div className={styles.header1}>
                   
             </div>

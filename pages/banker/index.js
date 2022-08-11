@@ -20,66 +20,59 @@ export default function Home() {
 
       <div>
         <div className="row">
-          <div className={styles.header}>OneCiti-P</div>
+          <div className={styles.header}>OneCiti</div>
         </div>
 
-        <div className="row">
-          <div className="col">
-            <div className="row">
-              <div className="col-4">
+        <div classNameName="row">
+          <div classNameName="col">
+            <div classNameName="row">
+              <div classNameName="col-4">
                 <a href="#" className={styles.box1}>
                   <div>
-                    {' '}
-                    <BsReverseLayoutTextSidebarReverse size={100} />{' '}
+                    <BsReverseLayoutTextSidebarReverse size={100} />
                   </div>
                   <div className={styles.logoHeader1}> Daily Tasks </div>
                 </a>
               </div>
 
-              <div className="col-4">
+              <div classNameName="col-4">
                 <a href="#" className={styles.box1}>
                   <div>
-                    {' '}
-                    <RiBankFill size={100} />{' '}
+                    <RiBankFill size={100} />
                   </div>
                   <div className={styles.logoHeader1}> Bank Services </div>
                 </a>
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-4">
+            <div classNameName="row">
+              <div classNameName="col-4">
                 <a href="#" className={styles.box1}>
                   <div>
-                    {' '}
-                    <HiUserGroup size={100} />{' '}
+                    <HiUserGroup size={100} />
                   </div>
                   <div className={styles.logoHeader1}> Clients</div>
                 </a>
               </div>
-              <div className="col-4">
+              <div classNameName="col-4">
                 <a href="#" className={styles.box1}>
                   <div>
-                    {' '}
-                    <TiNews size={100} />{' '}
+                    <TiNews size={100} />
                   </div>
-                  <div className={styles.logoHeader1}>
-                    {' '}
-                    Knowledge Management{' '}
-                  </div>
+                  <div className={styles.logoHeader1}>Knowledge Management</div>
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="col">
+          <div classNameName="col">
             <div className={styles.glancebg}>
-              <div className="row">
+              <div classNameName="row">
                 <div className={styles.newsHeader}>At A Glance</div>
               </div>
-              <div className="row">
+              <div classNameName="row">
                 <a href="#" className={styles.article1}>
-                  <BsReverseLayoutTextSidebarReverse size={80} /> Daily Tasks
+                  <BsReverseLayoutTextSidebarReverse size={50} /> Daily Tasks
                   <div className={styles.articleBody1}>
                     <br></br>
                     <li>Approve accounts for Jenny, George and Cynthia</li>
@@ -88,15 +81,16 @@ export default function Home() {
                 </a>
 
                 <a href="#" className={styles.article2}>
-                  <HiUserGroup size={100} /> Clients
+                  <HiUserGroup size={50} /> Clients
                   <div className={styles.articleBody1}>
+                    <br></br>
                     <li>Client Meeting with Jessica</li>
                     <li>Due : Today 14:00</li>
                   </div>
                 </a>
 
                 <a href="#" className={styles.article3}>
-                  <TiNews size={100} /> Daily Tasks
+                  <TiNews size={50} /> Daily Tasks
                   <div className={styles.articleBody1}>
                     <br></br>
                     <li>Check and complete accounts for Donuts.co</li>
@@ -105,7 +99,7 @@ export default function Home() {
                 </a>
 
                 <a href="#" className={styles.article4}>
-                  <TiNews size={100} /> Knowledge Management
+                  <TiNews size={50} /> Knowledge Management
                   <div className={styles.articleBody1}>
                     <br></br>
                     <li>
