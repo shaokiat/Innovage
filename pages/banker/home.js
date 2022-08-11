@@ -26,7 +26,7 @@ export default function Home() {
             </div>
 
                 <div className = "row">
-                      <div className = "col-5">
+                      <div className = "col-6">
                             <div className = "row">
                                   <div className = "col-4">
                                               <a href = "#" className = {styles.box1}>
